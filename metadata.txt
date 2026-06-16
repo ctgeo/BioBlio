@@ -1,0 +1,16 @@
+[general]
+name=Chargeur de données naturalistes
+qgisMinimumVersion=3.0
+description=Chargement de données naturalistes (ZNIEFF, Natura 2000, L214, SAGE, GBIF) par territoire (commune, département, région, France)
+version=1.0
+author=Thomas
+email=contact@example.com
+about=Plugin permettant de charger des couches naturalistes depuis les WFS IGN Géoplateforme et Sandre, ainsi que des observations GBIF, filtrées par territoire et groupe taxonomique.
+tracker=
+repository=
+homepage=
+category=Vecteur
+icon=icon.png
+experimental=False
+deprecated=False
+tags=naturaliste,biodiversité,ZNIEFF,Natura2000,GBIF,WFS
