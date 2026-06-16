@@ -1,11 +1,17 @@
 [general]
-name=Chargeur de données naturalistes
-qgisMinimumVersion=3.0
-description=Chargement de données naturalistes (ZNIEFF, Natura 2000, L214, SAGE, GBIF) par territoire (commune, département, région, France)
-version=1.0
-author=Thomas
-email=contact@example.com
-about=Plugin permettant de charger des couches naturalistes depuis les WFS IGN Géoplateforme et Sandre, ainsi que des observations GBIF, filtrées par territoire et groupe taxonomique.
+name=BioBlio
+qgisMinimumVersion=3.16
+description=Chargeur de données naturalistes — ZNIEFF, Natura 2000, L214, SAGE, GBIF, cadastre, urbanisme GPU
+version=1.0.0
+author=Thomas Clapasson
+email=contact@ctgeo.fr
+about=BioBlio charge automatiquement des couches de données naturalistes filtrées par territoire (commune, département, région ou zone personnalisée).
+
+  Sources : IGN Géoplateforme (WFS), Sandre, RPDZH, Géoportail de l'Urbanisme (GPU), API Carto, GBIF.
+
+  Couches disponibles : ZNIEFF 1 & 2, Natura 2000 (ZSC / ZPS), Réserves Naturelles, PNR, APB, CEN, Zones Humides, Sites Ramsar, Cours d'eau L214, SAGE, SUP patrimoine culturel (AC1/AC2/AC4), Urbanisme GPU (PLU, EBC, éléments paysagers), Parcelles cadastrales, GBIF (observations faunistiques et floristiques).
+
+  Export : chargement direct dans QGIS, export GeoPackage ou Excel.
 tracker=
 repository=
 homepage=
@@ -13,4 +19,7 @@ category=Vecteur
 icon=icon.png
 experimental=False
 deprecated=False
-tags=naturaliste,biodiversité,ZNIEFF,Natura2000,GBIF,WFS
+hasProcessingProvider=no
+tags=naturaliste,biodiversité,ZNIEFF,Natura2000,GBIF,WFS,cadastre,urbanisme,IGN,Géoplateforme
+changelog=
+  1.0.0 - Version initiale : chargement WFS multi-sources, export GPKG et Excel, thème Dark Pro, accordéons, API Carto cadastre
